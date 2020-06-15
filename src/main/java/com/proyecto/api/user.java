@@ -3,7 +3,7 @@ package com.proyecto.api;
 import javax.persistence.*;
 
 @Entity
-@Table(name="user")
+@Table(name="usuario")
 public class user {
 
 	@Id
@@ -15,13 +15,13 @@ public class user {
 	private String email;
 	
 	@Column
-	private String password;
+	private String pass;
 	
 	@Column
 	private String created_at;
 	
 	@Column
-	private String update_at;
+	private String updated_at;
 
 	public int getId() {
 		return id;
@@ -39,12 +39,12 @@ public class user {
 		this.email = email;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getPass() {
+		return pass;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
 
 	public String getCreated_at() {
@@ -55,13 +55,15 @@ public class user {
 		this.created_at = created_at;
 	}
 
-	public String getUpdate_at() {
-		return update_at;
+	public String getUpdated_at() {
+		return updated_at;
 	}
 
-	public void setUpdate_at(String update_at) {
-		this.update_at = update_at;
+	public void setUpdated_at(String updated_at) {
+		this.updated_at = updated_at;
 	}
+
+	
 	
 	
 	
