@@ -65,6 +65,16 @@
 					<finalName>users-mysql</finalName>
 				</configuration>
 			</plugin>
+			<plugin>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			   
+			    <configuration>
+			        <includes>
+			            <include>TestFail.java</include>
+			        </includes>
+			        <skipTests>true</skipTests>
+			    </configuration>
+			</plugin>
 		</plugins>
 	</build>
 
